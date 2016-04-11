@@ -28,11 +28,21 @@
                         controller: require('./menu/menu.ctrl')
                     },
                     recipes: {
-                        template: require('./recipes.html')
+                        template: require('./recipes/recipes.html'),
+                        resolve: {
+                            recipes: () => {
+                                return [12, 4, 5, 6, 7, 8, 9];
+                            }
+                        },
+                        controller: ($scope, recipes) => {
+                            $scope.recipes = recipes;
+                        }
                     }
                 }
-            })
+            });
 
+
+            require('./recipes/recipes.css');
         });
 
 }());

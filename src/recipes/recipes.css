@@ -1,0 +1,18 @@
+.recipes {
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    height: 100%;
+    width: 100%;
+    background: white;
+    z-index: 10500;
+    box-sizing: border-box;
+    padding: 20px 39px;
+}
+
+.recipes ul {
+    list-style: none;
+    padding: 0;
+    margin: 4px;
+}
