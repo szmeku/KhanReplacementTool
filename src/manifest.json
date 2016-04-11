@@ -1,0 +1,27 @@
+{
+  "name": "Khan Academy Replacement Tool",
+  "description": "Change number format from dots to commas.",
+  "author": "Szymon Bubak & Krzysztof Krystek & Robert Pala",
+  "version": "2.0.2",
+  "permissions": [
+    "activeTab"
+  ],
+  "content_scripts": [
+    {
+      "matches": [
+        "http://crowdin.com/translate/khanacademy/*",
+        "https://crowdin.com/translate/khanacademy/*"
+      ],
+      "js": [
+        "bundle.js"
+      ],
+      "all_frames": true
+    }
+  ],
+  "icons": {
+    "16": "images/icon16.png",
+    "48": "images/icon48.png",
+    "128": "images/icon128.png"
+  },
+  "manifest_version": 2
+}
